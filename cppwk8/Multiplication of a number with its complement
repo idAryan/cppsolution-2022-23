@@ -4,14 +4,22 @@
 #include <stdlib.h>
 
 int main() {
-    int T,n,num;
+    int f_d,l_d,T,n;
+    long long int num;
     scanf("%d",&T);
     n=0;
     while(n<T)
     {
         n++;
-        scanf("%d",num);
-        printf("%d\n",num*(num+1)*-1);
+        scanf("%lld",&num);
+        l_d=num%10;
+        while(num>10)
+        {
+            num=num/10;
+            f_d=num;
+        }
+    printf("%d\n",f_d+l_d);
+        
     }
     
 
