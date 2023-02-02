@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int T,n,num;
+    scanf("%d",&T);
+    n=0;
+    while(n<T)
+    {
+        n++;
+        scanf("%d",num);
+        printf("%d\n",num*(num+1)*-1);
+    }
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
