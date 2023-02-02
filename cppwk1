@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,n,sum,a,fact,digit,j,m;
+    scanf("%d",&a);
+    for(i=1;i<=a;i++)
+    {       scanf("%d",&n);
+            fact=1;
+            for(j=1;j<=n;j++)
+            {
+                fact=fact*j;   
+            }
+
+            digit=fact;
+            sum=0;
+            while(digit>0)
+            {
+                m=digit%10;
+                sum=sum+m;
+                digit=digit/10;
+            }
+       
+
+             printf("%d\n",sum);}
+
+         
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
